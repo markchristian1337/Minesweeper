@@ -1,0 +1,72 @@
+x canary test
+
+x user exposes an unexposed cell
+
+x user exposes an exposed cell
+
+x user exposes a cell outside of the range
+
+x expose cell 3, 2 but check the status of cell 5, 7 (unexposed)
+- seal an unexposed cell
+
+x unseal a sealed cell
+
+x user tries to expose a sealed cell
+
+x user tries to seal an exposed cell
+
+x tests for out of bounds for seal
+
+x expose calls exposeNeighbors
+
+x expose called on an already exposed cell does not call exposeNeighbors
+
+x expose called on a sealed cell does not call  exposeNeighbors
+
+x exposeNeighbors calls expose on eight neighbors
+
+x exposeNeighbors on top left cell calls expose only on  existing cells
+
+x exposeNeighbors on bottom right cell calls expose only on existing cells
+
+give good names for these tests:
+- isMineAt(3, 2) returns false
+- set mine at 3, 2 and isMineAt(3, 2) returns true
+- set mine at 3, 2, seal cell 3, 2, verify isMineAt(3, 2) returns true and 
+  status for 3, 2 returns SEALED
+- isMineAt(-1, 4) returns false
+- isMineAt(10, 5) returns false
+- isMineAt(5, -1) returns false
+- isMineAt(7, 10) returns false
+- exposing an adjacent cell does not call expose neighbors
+- verify adjacentMinesCountAt(4, 6) returns 0
+- set mine at 3, 4 and verify adjacentMinesCountAt(3, 4) returns 0
+- set mine at 3, 4 and verify adjacentMinesCountAt(3, 5) returns 1
+- set mine at 3, 4 and 2, 6 and verify adjacentMinesCountAt(3, 5) returns 2
+- set mine at 0, 1 and verify adjacentMinesCountAt(0, 0) returns 1
+- verify adjacentMinesCountAt(0, 9) returns 0
+- set mine at 9, 8 and verify adjacentMinesCountAt(9, 9) returns 1
+- verify adjacentMinesCountAt(9, 0) returns 0
+...
+
+More tests:
+
+give good names for these tests:
+-getGameStatus() returns INPROGRESS
+-expose a mined cell and getGameStatus() returns LOST
+-game in progress after all mines sealed but cells remain unexposed
+-game in progress after all mines are sealed but an empty cell is sealed
+-game in progress after all mines sealed but an adjacent cell is unexposed
+-game WON after all mines are sealed and all other cells exposed
+-call setMines(0) and verify there are a total of 10 minutes, where 0 is a seed value for random number generator
+-call setMines(0) and setMines(1) and verify there is at least one mine
+ at a different between the two
+
+
+Then:
+
+Create a MineSweeperUI class (in a game.ui package if using Java, in a separate project if using C# or C++, in a separate directory under src if using Python) that will display a 10x10 grid and allow the user to play the game. Do not write any tests for this class. Please do not put any logic in the UI. Reuse the MineSweeper class we created.
+
+Modify the build (or ask for Venkat's help over email) to invoke the MineSweeperUI.
+
+Develop this part in increments. It may take a few hours to create this. Take small steps. Get the UI to display the grid. Then handle click events. Then display exposed state on the UI. Then display the sealed state on the view. Then display a mine on the view. One little step at a time. As for review along the way. Do not go for more than a day without review at this stage also.

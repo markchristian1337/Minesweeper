@@ -1,0 +1,67 @@
+Assign1: Due 11:59PM February 15
+
+***Your chance of success greatly increases if you start very early. Your chance of failure increases if you start late.
+
+Using Test First Development (no code without test first) implement the problem you designed in hw2. Feel free to evolve that design and use your judgment to make changes based on the improved understanding and learning.
+
+Take small steps, ask for frequent reviews.
+
+First start with a tests list and a canary test. Implement at most two more tests and minimum code to make those tests to pass. This is a great first step to complete and ask for a review.
+
+After completing the assignment (and only after) answer the following questions:
+
+1. What did you learn mainly in this assignment?
+
+This asgnment was really cool we used the canary test stuff. I had some trouble because I started late. Not this next time though.
+I'm starting this next one tonight.
+
+2. How is your current design different, if at all, from the strategic design created in hw2?
+Everything I said was changed. We did what Venkat said. 
+
+3. Were there any surprises or things you did not expect along the way? Any 
+particular problem faced, things you had to tackle that you did not expect 
+beforehand?
+
+That last part with the UI was a disaster. I couldn't even get it to run. The UI appeared. But I could not connect it.
+
+                                            
+Total [100]: 61
+Code compiles [10]:
+Program produces reasonably desired results when run [10]: -10
+
+No GUI found
+
+All tests pass [20]: -4
+
+Code Coverage [10]: -5
+
+Test quality [10]: -5
+
+Incomplete tests. Not much beyond what I had written.
+
+Design quality [20]: -10
+
+Incomplete
+
+Code quality [10]: -2
+
+Avoid long methods.
+
+
+Answers to questions in assign1.txt [10]: -3
+Lacking in response. Right from hw1 I have indicated that the writing is not 
+sufficient. It continues here too, you're not showing improvement in spite of
+continuous feedback about where things are lacking.
+
+Unless significant change happens, this course will turn 
+into a huge failure for the two of you. I have mentioned this before, I like 
+to change things when there is still an opportunity to succeed. There is still 
+time, but you'll have to start early, respond to feedbacks, and actually show
+results and progress. I truly want to help, but I can't help you succeed 
+without your significant participation. This is a very highly intense course
+and passing this is not easy without extensive effort and showing progress.
+
+Looks like a significant imbalance in the number of checkins:
+whiteandgreytiles@gmail.com 79
+markchristian1337@gmail.com 6
+Please improve on this front moving forward.
